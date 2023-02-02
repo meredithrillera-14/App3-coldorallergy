@@ -131,8 +131,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p> Are your symptoms seasonal or chronic?</p>
 		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black"> No </a> <!-- should count points and send user to page three-->
+         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black"> No </a> <!-- should count points and send user to page five-->
+</div>	
+
+<div class="page" id="five"> <!-- start of new page & questions. However having trouble making new pages-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- do i need to keep header info?-->
+		<h1>Question 5</h1>
 	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Do you have aches and pains?</p>  
+		<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black"> No
+</div>
+
+<div class="page" id="six">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 6</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Is your face puffy?</p>
+		<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> No
 </div>	
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
