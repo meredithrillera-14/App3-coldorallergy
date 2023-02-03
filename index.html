@@ -113,7 +113,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
          	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- should count points and send user to page three-->
 	</div>
 </div>
-<div class="page" id="three"> <!-- new page with question 3, about sore throat. thisa page and after not showing up.-->
+<div class="page" id="three"> <!-- new page with question 3, about sore throat.-->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
@@ -135,28 +135,30 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!-- should count points and send user to page five-->
 </div>	
-
-<div class="page" id="five"> <!-- start of new page & questions. However having trouble making new pages-->
-	<div id="header" class="w3-container w3-flat-carrot"> <!-- do i need to keep header info?-->
+<div class="page" id="five"> <!-- start of new page & questions.-->
+	<div class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
 	</div>
 	
-        <p>Do you have aches and pains?</p>  
+	<div id="content" class="w3-container">
+        	<p>Do you have aches and pains?</p>  
 		<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
-</div>
 
+	</div>
+</div>
 <div class="page" id="six">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 6</h1>
+		<h1>Question 6</h1> <!-- new page and question to see if it is an allergy-->
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Is your face puffy?</p>
-		<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
-</div>	
+		<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!-- shold count points based off answer and take user to results. still deciding how i want user to go to results-->
 
+	</div>	
+</div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p> <!-- How do i put footer on every page--> 
 </footer>
