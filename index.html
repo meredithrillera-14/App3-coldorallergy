@@ -38,8 +38,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var allergy_count = 0; //counts for allergy, whether it is yes or no
+        var cold_count = 0; //counts for cold, depends on what user clicks
 
 
         function allergyAdd(){
@@ -158,12 +158,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container">
 		<p>Is your face puffy?</p>
-		<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">No</a> 
+		<a href="#finalpage"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#finalpage"  onclick="coldAdd();" class="w3-btn w3-black">No</a> 
 
 	</div>
 </div>
-<div class="page" id="results"> 
+<div class="page" id="finalpage"> 
 	<div class="w3-container w3-flat-carrot">
 		<h1>RESULTS</h1> <!--should be last page in the quiz, which has the results of quiz-->
 	</div>
