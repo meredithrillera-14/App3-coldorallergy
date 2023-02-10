@@ -19,9 +19,8 @@ triedel@utexas.edu
 Brief Description of Goal of Code:
 	To "diagnosis" someone with either a cold or an allergy, while learning how to use 3 different codes: HTML5, CSS3, and JavaScript to make a web-based app.
  
-Known Issues:
-	Buttons do not function properly, they just count when ever yes or no is clicked. Sometimes it will not even count it. 
-	Results page is there, but displaying results is tricker. Also harder when buttons do not function well.
+Known Issues: 
+	There is a results page. Getting the results to display is not popping up, just text provided on the code.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -170,7 +169,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Results from quiz...</p> <!-- explains the results of your quiz related to a cold, allergy, or maybe both-->
 		<script>
-			resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+			resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; <!-- should calculate percentage of each yes or no answer and display probability of either a cold or allergies-->
 		</script>
 	</div>
 </div>
