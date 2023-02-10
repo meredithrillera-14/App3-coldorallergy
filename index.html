@@ -99,18 +99,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         	<p>Are your eyes watery or itchy?</p>    
- 		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!-- when clicked on a button,a count of one popped up. How do I fixed that?-->
+ 		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!-- when clicked on a button,a count of one popped up. How do I fixed that? Need to make alert for allergy a comment.-->
 		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts data-->
 	</div> 
 </div>
-<div class="page" id="two">
+<div class="page" id="two"> <!-- start of two with q2-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!-- yes clicked, point added for cold and send them to next page-->
          	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- should count points and send user to page three-->
 	</div>
 </div>
@@ -121,8 +121,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         	<p>Do you have a sore throat?</p>    
- 		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> 
-		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts data-->
+ 		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!-- add point for cold and send to next page after clicked on-->
+		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts data for allergy-->
 	
 	</div>  
 </div>
@@ -144,25 +144,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        	<p>Do you have aches and pains?</p>    
+        	<p>Do you have aches and pains?</p> <!-- question made by me for cold--> 
  		<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> 
-		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts data-->
+		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts for allergy-->
 	
 	</div>  
 </div>
-<div class="page" id="six">
+<div class="page" id="six"> <!-- last page with question, should be q6-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1> 
 	</div>
 	
 	<div id="content" class="w3-container">
 		<p>Is your face puffy?</p>
-		<a href="#finalpage"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+		<a href="#finalpage"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!-- buttons should appear on page as yes or no. The functionis recording data and moving patient to new page-->
          	<a href="#finalpage"  onclick="coldAdd();" class="w3-btn w3-black">No</a> 
 
 	</div>
 </div>
-<div class="page" id="finalpage"> 
+<div class="page" id="finalpage"> <!-- final page with results of diagnosis-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>RESULTS</h1> <!--should be last page in the quiz, which has the results of quiz-->
 	</div>
