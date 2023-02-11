@@ -166,21 +166,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container"> <!-- section with question type and buttons-->
 		<p>Is your face puffy?</p>
 		<a href="#finalpage"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!-- buttons should appear on page as yes or no. The functionis recording data and moving patient to new page-->
-         	<a href="#finalpage"  onclick="coldAdd();" class="w3-btn w3-black">No</a> 
+         	<a href="#finalpage"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!-- yes or no will automatically send the user to final page to get results of their quiz-->
 
 	</div> <!--ending section with question 6 with buttons-->
 </div> <!-- closing page 6 entirely-->
 <div class="page" id="finalpage"> <!-- final page with results of diagnosis-->
-	<div id="header" class="w3-container w3-flat-carrot"> <!--new section to display title of final page-->
+	<div class="w3-container w3-flat-carrot"> <!--new section to display title of final page-->
 		<h1>RESULTS</h1> <!--should be last page in the quiz, which has the results of quiz-->
 	</div> <!-- closing section that displays the title-->
 	
 	<div id="content" class="w3-container"> <!--new section to show results of quiz-->
-		<p>results prob.</p> <!-- explains the results of your quiz related to a cold, allergy, or maybe both-->
+		<p>View results of quiz</p> <!-- explains the results of your quiz related to a cold, allergy, or maybe both-->
+		<a class='w3-btn w3-black" onclick="displayResults();"> Results </a> <!--button to display results. Onclick coonects it to code written in function, the displayResults link it to which function-->
 		
 	</div> <!-- closing section that has results displayed-->
-</div> <!--ending final page text section on screen-->
 </div> <!--closing off final page-->
+
 <footer class="w3-bottom w3-container w3-flat-carrot"> <!-- considered new section on every page-->
 	<p>DIY!</p> <!--footers suppose to be on every page-->
 </footer>
