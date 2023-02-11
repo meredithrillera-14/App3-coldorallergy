@@ -38,7 +38,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0; //counts for allergy, whether it is yes or no//
         var cold_count = 0; //counts for cold, depends on what user clicks//
-	var resultText = document.getElementById("finalpage"); //variable for the results, need to display the results//
+	var resultText = document.getElementById("finalpage").innerHTML= "New Text!"; //variable for the results, need to display the results//
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; //should calculate percentage of each yes or no answer and display probability of either a cold or allergies//
         
 	function allergyAdd(){
