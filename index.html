@@ -39,6 +39,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         var allergy_count = 0; //counts for allergy, whether it is yes or no//
         var cold_count = 0; //counts for cold, depends on what user clicks//
 	var resultText = document.getElementById("finalpage").innerHTML= "New Text!"; //variable for the results, need to display the results//
+	
 	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; //should calculate percentage of each yes or no answer and display probability of either a cold or allergies//
         
 	function allergyAdd(){
@@ -102,79 +103,79 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         	<p>Are your eyes watery or itchy?</p>    
  		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!-- when clicked on a button,a count of one popped up. How do I fixed that? Need to make alert for allergy a comment.-->
 		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts data-->
-	</div> 
-</div>
+	</div> <!--q1 and buttons together in section-->
+</div> <!--clodes page one-->
 <div class="page" id="two"> <!-- start of two with q2-->
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-carrot"> 
 		<h1>Question 2</h1>
-	</div>
+	</div> <!--for putting buttons underneath the question-->
 	
-	<div id="content" class="w3-container">
+	<div id="content" class="w3-container"> <!--button section-->
 		<p>Do you have a fever?</p>
 		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!-- yes clicked, point added for cold and send them to next page-->
          	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- should count points and send user to page three-->
-	</div>
-</div>
+	</div> <!--end of button section-->
+</div> <!--end of page 2 section-->
 <div class="page" id="three"> <!-- new page with question 3, about sore throat.-->
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- q3 in its own area-->
 		<h1>Question 3</h1>
 	</div>
 	
-    	<div id="content" class="w3-container">
+    	<div id="content" class="w3-container"> <!-- start of section with question and buttons-->
         	<p>Do you have a sore throat?</p>    
  		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!-- add point for cold and send to next page after clicked on-->
 		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts data for allergy-->
 	
-	</div>  
+	</div>  <!--ends the question ands button section-->
 </div>
-<div class="page" id="four">
-	<div id="header" class="w3-container w3-flat-carrot">
+<div class="page" id="four"> <!-- section of new page for 4th page-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--start of header/title-->
 		<h1>Question 4</h1> <!-- should be a page 4 with a new question-->
-	</div>
+	</div> <!ending title part-->
 	
-	<div id="content" class="w3-container">
+	<div id="content" class="w3-container"> <!-- section for actual question and buttons-->
 		<p> Are your symptoms seasonal or chronic?</p>
 		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!-- should count points and send user to page five-->
 
-	</div>
-</div>	
-<div class="page" id="five"> 
-	<div id="header" class="w3-container w3-flat-carrot">
+	</div> <!-- end of sections and buttons-->
+</div>	<!--ending page 4-->
+<div class="page" id="five"> <!--start of page 5-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- new section for title and question number-->
 		<h1>Question 5</h1>
-	</div>
+	</div> <!-- end the title section on page 5-->
 	
-    	<div id="content" class="w3-container">
+    	<div id="content" class="w3-container"> <!-- making a section for the actual questions and buttons to be together-->
         	<p>Do you have aches and pains?</p> <!-- question made by me for cold--> 
  		<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> 
 		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts for allergy-->
 	
-	</div>  
-</div>
-<div class="page" id="six"> <!-- last page with question, should be q6-->
-	<div id="header" class="w3-container w3-flat-carrot">
+	</div>  <!-- closing the section with actual question and buttons together-->
+</div> <!--clsoing page 5 entirely-->
+<div class="page" id="six"> <!-- new page with q6-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--new section to display what question user is on-->
 		<h1>Question 6</h1> 
-	</div>
+	</div> <!--ending the section which displays the question number-->
 	
-	<div id="content" class="w3-container">
+	<div id="content" class="w3-container"> <!-- section with question type and buttons-->
 		<p>Is your face puffy?</p>
 		<a href="#finalpage"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!-- buttons should appear on page as yes or no. The functionis recording data and moving patient to new page-->
          	<a href="#finalpage"  onclick="coldAdd();" class="w3-btn w3-black">No</a> 
 
-	</div>
-</div>
+	</div> <!--ending section with question 6 with buttons-->
+</div> <!-- closing page 6 entirely-->
 <div class="page" id="finalpage"> <!-- final page with results of diagnosis-->
-	<div id="header" class="w3-container w3-flat-carrot">
+	<div id="header" class="w3-container w3-flat-carrot"> <!--new section to display title of final page-->
 		<h1>RESULTS</h1> <!--should be last page in the quiz, which has the results of quiz-->
-	</div>
+	</div> <!-- closing section that displays the title-->
 	
-	<div id="content" class="w3-container">
-		<p>resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;</p> <!-- explains the results of your quiz related to a cold, allergy, or maybe both-->
+	<div id="content" class="w3-container"> <!--new section to show results of quiz-->
+		<p>results prob.</p> <!-- explains the results of your quiz related to a cold, allergy, or maybe both-->
 		
-	</div>
-</div>
-</div>
-<footer class="w3-bottom w3-container w3-flat-carrot"> 
+	</div> <!-- closing section that has results displayed-->
+</div> <!--ending final page text section on screen-->
+</div> <!--closing off final page-->
+<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- considered new section on every page-->
 	<p>DIY!</p> <!--footers suppose to be on every page-->
 </footer>
 
